@@ -1,0 +1,23 @@
+/*Header*/
+
+header{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom,rgba(0,0,0,.9),transparent), url("/img/hero.jpeg") bottom no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+/*Header - Main Text*/
+
+.main-text{
+  line-height: 0;
+  margin: auto;
+  color: var(--main-white);
+  user-select: none;
+}
+
+// .main-text 
