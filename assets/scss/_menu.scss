@@ -1,0 +1,52 @@
+.menu{
+  padding: 2rem 2.5rem;
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 999;
+  border-radius: 3px;
+  cursor: pointer;
+
+}
+
+.bar,
+.bar::before,
+.bar::after{
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 4rem;
+  background-color: var(--main-white);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transition: 650ms;
+}
+
+.bar::before{
+  top: -2rem;
+}
+.bar::after{
+  top: 2rem;
+}
+
+.active .bar{
+  background-color: transparent;
+}
+
+.active .bar::before{
+  transform: rotate(45deg);
+}
+
+.active .bar::after{
+  transform: rotate(-45deg);
+}
+
+.active .bar::after,
+.active .bar::before{
+  top: 0;
+}
+
