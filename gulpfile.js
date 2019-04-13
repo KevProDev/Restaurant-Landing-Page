@@ -52,7 +52,7 @@ gulp.task('browser-sync', function() {
 	browserSync.init({
 		server: './dist',
 		notify: false,
-		open: false //change this to true if you want the broser to open automatically
+		open: true //change this to true if you want the broser to open automatically
 	});
 });
 
