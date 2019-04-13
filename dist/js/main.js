@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_jquery_dist_jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/jquery/dist/jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var _node_modules_jquery_dist_jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_jquery_dist_jquery__WEBPACK_IMPORTED_MODULE_0__);\n\nconsole.log('I AM WORKING');\nconst $ = _node_modules_jquery_dist_jquery__WEBPACK_IMPORTED_MODULE_0___default.a;\n$('.menu').on('click', function () {\n  $(this).toggleClass('active');\n  $('.overlay').toggleClass('menu-open');\n});\n\n//# sourceURL=webpack:///./assets/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_jquery_dist_jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/jquery/dist/jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var _node_modules_jquery_dist_jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_jquery_dist_jquery__WEBPACK_IMPORTED_MODULE_0__);\n\nconsole.log('I AM WORKING');\nconst $ = _node_modules_jquery_dist_jquery__WEBPACK_IMPORTED_MODULE_0___default.a;\n$('.menu').on('click', function () {\n  $(this).toggleClass('active');\n  $('.overlay').toggleClass('menu-open');\n});\n$('.nav a').on('click', function () {\n  $('.menu').removeClass('active');\n  $('.overlay').removeClass('menu-open');\n});\n\n//# sourceURL=webpack:///./assets/js/main.js?");
 
 /***/ }),
 
