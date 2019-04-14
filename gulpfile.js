@@ -45,6 +45,7 @@ gulp.task('styles', () => {
 			})
 		)
 		.pipe(gulp.dest('./dist/css'))
+		.pipe(gulp.dest('./docs/css'))
 		.pipe(browserSync.stream());
 });
 
